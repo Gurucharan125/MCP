@@ -35,6 +35,7 @@ def run_agent(query: str, chat_history: List[Dict[str, str]], is_interactive: bo
     print("\n" + "=" * 50)
     print(f"[Agent] Processing Query: \"{query}\"")
     print("=" * 50)
+    print(f"[Agent] Chat History Length: {len(chat_history)} messages")
     
     pre_rag_start = time.time()
     intent = get_intent(query)
